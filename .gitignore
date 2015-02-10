@@ -1,0 +1,23 @@
+## Gradle
+/.gradle
+/build
+##/gradle
+##/gradlew
+##/gradlew.bat
+
+## Eclipse
+/eclipse
+/.settings
+/.metadata
+/.classpath
+/.project
+/bin
+
+## IntelliJ
+/out
+/.idea
+/*.iml
+/*/*.iml
+/*.ipr
+/*.iws
+/atlassian-ide-plugin.xml
