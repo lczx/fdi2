@@ -1,5 +1,6 @@
-include 'benchmark', 'eqsolve'
+include 'benchmark', 'eqsolve', 'history'
 
 rootProject.name = "Exams"
 project(':benchmark').name = "Collections-Benchmark"
 project(':eqsolve').name = "Equation-Solver"
+project(':history').name = "History-Channel"
