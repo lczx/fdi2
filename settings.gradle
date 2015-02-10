@@ -1,2 +1,4 @@
+include 'benchmark'
 
 rootProject.name = "Exams"
+project(':benchmark').name = "Collections-Benchmark"
