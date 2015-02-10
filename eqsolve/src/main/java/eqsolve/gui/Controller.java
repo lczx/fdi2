@@ -45,7 +45,8 @@ public class Controller implements ActionListener, DocumentListener {
             String text = ((JTextField) (parPanel.getComponent(2 * i + 1))).getText();
             double value = 0;
             try { value = Double.valueOf(text); } catch (NumberFormatException ex) {
-                System.err.println("Malformed input, expected a number.");
+                if (!text.equals(""))
+                    System.err.println("Malformed input, expected a number.");
             }
             equation.setParam(i, value);
         }

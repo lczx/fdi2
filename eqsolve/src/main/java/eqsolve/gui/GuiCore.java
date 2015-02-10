@@ -29,12 +29,14 @@ public class GuiCore {
         mainFrame.add(paramPanel);
         statusPanel = makeStatusPanel();
         mainFrame.add(statusPanel);
+
+        mainFrame.setVisible(true);
     }
 
     public void setVisibleParams(int n) {
         if (n > 3) return;
         for (int i = 0; i < 2 * 3; i += 2) {
-            paramPanel.getComponent(i).setVisible(1 < 2 * n);
+            paramPanel.getComponent(i).setVisible(i < 2 * n);
             paramPanel.getComponent(i + 1).setVisible(i < 2 * n);
         }
     }
