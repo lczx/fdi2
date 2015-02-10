@@ -2,10 +2,10 @@ package eqsolve.equation;
 
 public class LinearEquation extends EquationBase {
 
-    @Override
+    /*@Override
     public String getFriendlyName() {
         return "Linear Equation";
-    }
+    }*/
 
     @Override
     public String getCurrentFormula() {

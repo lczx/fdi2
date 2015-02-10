@@ -21,8 +21,7 @@ public class QuadraticSolver implements Solver {
         double delta = b * b - 4 * a * c;
         if (delta < 0) throw new RuntimeException("Δ < 0");
 
-        double[] ret = { (- b + delta) / (2 * a), (- b - delta) / (2 * a) };
-        return ret;
+        return new double[]{ (- b + delta) / (2 * a), (- b - delta) / (2 * a) };
     }
 
 }

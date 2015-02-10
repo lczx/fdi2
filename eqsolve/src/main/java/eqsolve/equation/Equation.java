@@ -2,7 +2,7 @@ package eqsolve.equation;
 
 public interface Equation {
 
-    String getFriendlyName();
+    // String getFriendlyName();
 
     String getCurrentFormula();
 

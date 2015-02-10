@@ -2,10 +2,10 @@ package eqsolve.equation;
 
 public class QuadraticEquation extends EquationBase {
 
-    @Override
+    /*@Override
     public String getFriendlyName() {
         return "Quadratic Equation";
-    }
+    }*/
 
     @Override
     public String getCurrentFormula() {
