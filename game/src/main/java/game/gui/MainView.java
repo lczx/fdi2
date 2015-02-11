@@ -9,10 +9,10 @@ import java.io.File;
 
 public class MainView extends JFrame {
 
-    public static final String GUITXT_EMPTY = " ";
-    public static final String GUITXT_SUCCESS = "[Match]";
-    public static final String GUITXT_FAILURE = "[Epic Fail]";
-    public static final String GUITXT_RESULTS = "Finished with %d points.";
+    public static final String GUI_TEXT_EMPTY = " ";
+    public static final String GUI_TEXT_SUCCESS = "[Match]";
+    public static final String GUI_TEXT_FAILURE = "[Epic Fail]";
+    public static final String GUI_TEXT_RESULTS = "Finished with %d points.";
 
     JButton startButton = new JButton("New Game");
     JButton saveButton = new JButton("Save");

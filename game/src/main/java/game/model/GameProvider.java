@@ -1,7 +1,7 @@
 package game.model;
 
 /**
- * New games generator for dependency injection into {@link GameController}.
+ * New games generator for dependency injection into {@link game.GameController}.
  */
 public class GameProvider {
 

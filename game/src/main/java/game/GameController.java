@@ -30,7 +30,7 @@ public class GameController implements GameUIListener {
 
         view.setGameRunning(true);
         view.setGridModel(game.getGridModel());
-        view.setStatusMessage(MainView.GUITXT_EMPTY);
+        view.setStatusMessage(MainView.GUI_TEXT_EMPTY);
 
         if (currentTimer != null) currentTimer.cancel();
         currentTimer = new Timer();
@@ -43,7 +43,7 @@ public class GameController implements GameUIListener {
     public void processWord(String word) {
         if (game == null) return;
         view.setStatusMessage(game.takeWord(word) ?
-            MainView.GUITXT_SUCCESS : MainView.GUITXT_FAILURE);
+            MainView.GUI_TEXT_SUCCESS : MainView.GUI_TEXT_FAILURE);
         view.selectInputText();
     }
 
@@ -61,6 +61,6 @@ public class GameController implements GameUIListener {
     private void endCurrentGame() {
         int points = game.getPointsCount();
         view.setGameRunning(false);
-        view.setStatusMessage(String.format(MainView.GUITXT_RESULTS, points));
+        view.setStatusMessage(String.format(MainView.GUI_TEXT_RESULTS, points));
     }
 }

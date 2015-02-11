@@ -1,13 +1,14 @@
 package game.model;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class RandomCharGrid extends GameGrid {
 
-    public static final String VOCALS = "aeiou";
+    public static final Character[] VOCALS = {'a', 'e', 'i', 'o', 'u'};
 
     private static boolean isVocal(char c) {
-        return VOCALS.indexOf(c) != -1;
+        return Arrays.asList(VOCALS).indexOf(c) != -1;
     }
 
     public RandomCharGrid(int width, int height) {
@@ -40,7 +41,7 @@ public class RandomCharGrid extends GameGrid {
                 y = r.nextInt(getRowCount());
             } while (isVocal(data[y][x]));
 
-            data[y][x] = VOCALS.charAt(r.nextInt(VOCALS.length()));
+            data[y][x] = VOCALS[r.nextInt(VOCALS.length)];
         }
     }
 
