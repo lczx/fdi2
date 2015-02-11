@@ -8,7 +8,7 @@ public class EventList extends Observable {
 
     SortedSet<HistoryEvent> events = new TreeSet<HistoryEvent>();
 
-    public void addEvents(String name, String year, String location) {
+    public void addEvent(String name, String year, String location) {
         getEvents().add(new HistoryEvent(name, Integer.parseInt(year), location));
         setChanged();
         notifyObservers();
