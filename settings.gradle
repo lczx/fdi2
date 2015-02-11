@@ -1,4 +1,4 @@
-include 'benchmark', 'eqsolve', 'history'
+include 'benchmark', 'eqsolve', 'game', 'history'
 
 rootProject.name = "Exams"
 project(':benchmark').name = "Collections-Benchmark"
