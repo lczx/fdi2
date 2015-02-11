@@ -4,10 +4,10 @@ import org.jetbrains.annotations.NotNull;
 
 public class HistoryEvent implements Comparable<HistoryEvent> {
 
-    public static final String DEFAULT_LOCATION = "Altro";
+    public static final String DEFAULT_LOCATION = "Other";
 
     public static final String[] LOCATIONS = { // Keep sorted!
-            "Altro", "Austria", "Francia", "Germania / Prussia", "Inghilterra", "Italia", "Russia", "Spagna"
+            DEFAULT_LOCATION, "Austria", "France", "Germany / Prussia", "England", "Italy", "Russia", "Spain"
     };
 
     public static int getLocationID(String location) {

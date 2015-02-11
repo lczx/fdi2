@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 
 public class View {
 
-    public static final String FILTER_ALL_TEXT = "Tutti";
+    public static final String FILTER_ALL_TEXT = "All";
 
     private JFrame frame = new JFrame();
     private JTextField eventBox = new JTextField();
@@ -59,10 +59,10 @@ public class View {
         JMenuBar bar = new JMenuBar();
 
         JMenu menuFile = new JMenu("File");
-        miSave = new JMenuItem("Salva");
+        miSave = new JMenuItem("Save");
         menuFile.add(miSave);
 
-        menuFilter = new JMenu("Filtra");
+        menuFilter = new JMenu("Filter");
         ButtonGroup bg = new ButtonGroup();
 
         JRadioButtonMenuItem bAll = new JRadioButtonMenuItem(FILTER_ALL_TEXT);
@@ -108,7 +108,7 @@ public class View {
         c.weighty = 1;
 
         c.gridx = 0;        c.gridy = 1;
-        c.gridwidth = 3;    c.gridwidth = 1;
+        c.gridwidth = 3;    c.gridheight = 1;
         frame.add(new JScrollPane(eventsTable), c);
     }
 
