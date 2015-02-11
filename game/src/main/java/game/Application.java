@@ -6,7 +6,7 @@ public class Application {
 
     public static void main(String[] args) {
         MainView.initializeLookAndFeel();
-        // TODO: Add model here
+        new GameController(new MainView("The Game"));
     }
 
 }
