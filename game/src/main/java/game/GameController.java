@@ -2,10 +2,12 @@ package game;
 
 import game.gui.GameUIListener;
 import game.gui.MainView;
+import game.io.GameModelWriter;
 import game.model.Game;
 import game.model.GameProvider;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -47,7 +49,13 @@ public class GameController implements GameUIListener {
 
     @Override
     public void saveResultsToFile(File file) {
-        // TODO: Add something to save results to file.
+        try {
+            GameModelWriter writer = new GameModelWriter(file);
+            writer.writeModel(game);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void endCurrentGame() {
