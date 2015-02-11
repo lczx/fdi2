@@ -1,4 +1,4 @@
-package gui;
+package game.gui;
 
 import javax.swing.*;
 import javax.swing.table.TableModel;

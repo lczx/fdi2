@@ -1,4 +1,4 @@
-package gui;
+package game.gui;
 
 import java.io.File;
 
