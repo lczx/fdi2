@@ -12,7 +12,6 @@ public class TestViewElement extends JPanel {
         toggleBox = new JCheckBox(name);
 
         setLayout(new GridLayout(1, 2));
-        System.out.println(getMaximumSize().width);
 
         // getMaximumSize().width := Short.MAX_VALUE
         setMaximumSize(new Dimension(Short.MAX_VALUE, 30));

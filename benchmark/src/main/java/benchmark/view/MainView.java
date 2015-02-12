@@ -15,7 +15,7 @@ public class MainView {
         this.bottomPanel = bottomPanel;
 
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        mainFrame.setSize(300, 400);
+        mainFrame.setSize(310, 400);
         mainFrame.setLocationByPlatform(true);
 
         initializeComponents();

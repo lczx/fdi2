@@ -15,7 +15,9 @@ public class TestControlPanel extends JPanel {
     public TestControlPanel() {
         statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        setLayout(new GridLayout(1, 3));
+        setLayout(new GridLayout(1, 3, 5, 0));
+        setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+
         add(initButton);
         add(new JSpinner(weightSelectorModel));
         add(statusLabel);

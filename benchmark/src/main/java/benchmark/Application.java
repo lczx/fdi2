@@ -11,10 +11,10 @@ public class Application {
 
     public static void main(String[] args) {
         VerticalListView vl = new VerticalListView();
-        vl.addElement(new TestViewElement("ahah"));
-        vl.addElement(new TestViewElement("bibi"));
+        vl.addElement(new TestViewElement("Test #1"));
+        vl.addElement(new TestViewElement("Test #2"));
 
-        new MainView("hah", new JScrollPane(vl), new TestControlPanel());
+        new MainView("Findusmark JavaMark '15", new JScrollPane(vl), new TestControlPanel());
     }
 
 }

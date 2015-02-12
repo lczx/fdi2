@@ -9,6 +9,7 @@ public class VerticalListView extends JPanel {
     }
 
     public void addElement(JComponent element) {
+        // Simply wrap 'add()'
         add(element);
     }
 
