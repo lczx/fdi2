@@ -12,9 +12,12 @@ public class TestViewElement extends JPanel {
         toggleBox = new JCheckBox(name);
 
         setLayout(new GridLayout(1, 2));
-
         // getMaximumSize().width := Short.MAX_VALUE
         setMaximumSize(new Dimension(Short.MAX_VALUE, 30));
+        statusLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+
+        toggleBox.setOpaque(false);
+        setOpaque(false);
 
         add(toggleBox);
         add(statusLabel);
