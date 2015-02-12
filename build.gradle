@@ -8,11 +8,24 @@ subprojects {
     sourceCompatibility = 1.6
     targetCompatibility = 1.6
 
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile 'junit:junit:latest.release'
+    }
+
     buildDir = "$rootProject.projectDir/build"
 
-    task hello << {
-        task -> println "I'm $task.project.name, path $task.project.path"
+    task hello {
+        description 'Say hello!'
+        group 'Useless'
+
+        doFirst {
+            task -> print "I'm $task.project.name, path \"$task.project.path\""
+        }
     }
-    tasks.hello { description = "Say hello!" }
+    hello << { println "!!!" } // doLast alias
 
 }
