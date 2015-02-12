@@ -23,7 +23,7 @@ public class TestVs implements Test {
         if (k1Time == k2Time) return "It was a tie!";
 
         return (k1Time < k2Time ? kernelA.getUnitName() : kernelB.getUnitName()) +
-                " (" + diff / 1000 + "μs faster)";
+                " (" + diff / 1000 + "us faster)";
     }
 
     private long measureKernelTime(Kernel kernel, int weight) {
