@@ -1,14 +1,20 @@
 
-project(':benchmark').description = "Collections Benchmark"
-project(':eqsolve').description = "Equation Solver"
-project(':game').description = "Crossword Puzzle"
-project(':history').description = "History Channel"
+def names = [
+    benchmark: 'Collections Benchmark',
+    eqsolve:   'Equation Solver',
+    game:      'Crossword Puzzle',
+    history:   'History Channel'
+]
 
 subprojects {
 
     apply plugin: 'java'
     apply plugin: 'eclipse'
     apply plugin: 'idea'
+    apply plugin: 'application'
+
+    description = names[project.name]
+    mainClassName = "${project.name}.Application"
 
     sourceCompatibility = 1.6
     targetCompatibility = 1.6
