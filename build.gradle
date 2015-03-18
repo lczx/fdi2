@@ -1,4 +1,9 @@
 
+project(':benchmark').description = "Collections Benchmark"
+project(':eqsolve').description = "Equation Solver"
+project(':game').description = "Crossword Puzzle"
+project(':history').description = "History Channel"
+
 subprojects {
 
     apply plugin: 'java'

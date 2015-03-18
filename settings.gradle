@@ -1,7 +1,3 @@
 include 'benchmark', 'eqsolve', 'game', 'history'
 
 rootProject.name = "Exams"
-project(':benchmark').name = "Collections-Benchmark"
-project(':eqsolve').name = "Equation-Solver"
-project(':game').name = "The-Game"
-project(':history').name = "History-Channel"
