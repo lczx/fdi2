@@ -1,3 +1,7 @@
-include 'benchmark', 'eqsolve', 'game', 'history'
+include 'exams',
+        'exams:benchmark',
+        'exams:eqsolve',
+        'exams:game',
+        'exams:history'
 
-rootProject.name = "Exams"
+//project(':exams').name = 'Exams'

@@ -1,43 +1,14 @@
-
-def names = [
-    benchmark: 'Collections Benchmark',
-    eqsolve:   'Equation Solver',
-    game:      'Crossword Puzzle',
-    history:   'History Channel'
-]
-
 subprojects {
 
     apply plugin: 'java'
     apply plugin: 'eclipse'
     apply plugin: 'idea'
-    apply plugin: 'application'
 
-    description = names[project.name]
-    mainClassName = "${project.name}.Application"
-
-    sourceCompatibility = 1.6
-    targetCompatibility = 1.6
 
     repositories {
         mavenCentral()
     }
 
-    dependencies {
-        compile 'org.jetbrains:annotations:latest.release'
-        testCompile 'junit:junit:latest.release'
-    }
-
     buildDir = "$rootProject.projectDir/build"
-
-    task hello {
-        description 'Say hello!'
-        group 'Useless'
-
-        doFirst {
-            task -> print "I'm $task.project.name, path \"$task.project.path\""
-        }
-    }
-    hello << { println "!!!" } // doLast alias
 
 }
