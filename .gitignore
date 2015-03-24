@@ -1,3 +1,6 @@
+## Generic compiled classes
+*.class
+
 ## Gradle
 /.gradle
 /build
