@@ -1,6 +1,4 @@
-package factory;
-
-import factory.shapes.Shape;
+import shapes.Shape;
 import shapes.ShapeFactory;
 
 public class Pattern {
