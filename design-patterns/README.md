@@ -22,7 +22,14 @@
 - Singleton
 
 #### Structural patterns
-- todo
+- Adapter
+- Bridge
+- Composite
+- Decorator
+- Facade
+- Filter
+- Flyweight
+- Proxy
 
 #### Other
 - Business Delegate
