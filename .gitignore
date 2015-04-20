@@ -20,8 +20,7 @@
 /out
 /classes
 /.idea
-/*.iml
-/*/*.iml
+*.iml
 /*.ipr
 /*.iws
 /atlassian-ide-plugin.xml

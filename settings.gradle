@@ -1,3 +1,6 @@
+include 'course:httpd',
+        'course:misc'
+
 include 'exams',
         'exams:benchmark',
         'exams:eqsolve',
