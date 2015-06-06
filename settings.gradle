@@ -1,5 +1,6 @@
 include 'course:httpd',
-        'course:misc'
+        'course:misc',
+        'course:misc-cpp'
 
 include 'exams',
         'exams:benchmark',

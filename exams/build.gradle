@@ -7,7 +7,12 @@ def names = [
 
 subprojects {
 
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
     apply plugin: 'application'
+
+    repositories.jcenter()
 
     description = names[project.name]
     mainClassName = "${project.name}.Application"

@@ -1,4 +1,10 @@
 description = 'Random things'
 
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories.jcenter()
+
 sourceCompatibility = 1.7
 targetCompatibility = 1.7

@@ -1,0 +1,39 @@
+description = 'Random things, C++'
+
+apply plugin: 'cpp'
+apply plugin: 'visual-studio'
+
+model {
+    buildTypes {
+        debug
+        release
+    }
+    components {
+        main(NativeExecutableSpec) {
+            targetPlatform 'x86'
+            targetPlatform 'x64'
+            sources {
+                cpp { }
+            }
+            binaries.all {
+                if (toolChain in Gcc && buildType == buildTypes.debug) {
+                    cppCompiler.args '-g'
+                }
+                if (toolChain in VisualCpp && buildType == buildTypes.debug) {
+                    cppCompiler.args '/Zi'
+                    cppCompiler.define 'DEBUG'
+                    linker.args '/DEBUG'
+                }
+            }
+        }
+    }
+    platforms {
+        x86 {
+            architecture 'x86'
+        }
+        x64 {
+            architecture 'x86_64'
+        }
+    }
+}
+

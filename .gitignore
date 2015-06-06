@@ -1,12 +1,6 @@
-## Generic compiled classes
-*.class
-
 ## Gradle
-/.gradle
-/build
-##/gradle
-##/gradlew
-##/gradlew.bat
+**/.gradle
+**/build
 
 ## Eclipse
 /eclipse
@@ -24,3 +18,12 @@
 /*.ipr
 /*.iws
 /atlassian-ide-plugin.xml
+
+# Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sdf
+*.suo
+.vs
