@@ -20,6 +20,7 @@ model {
                     cppCompiler.args '-g'
                 }
                 if (toolChain in VisualCpp && buildType == buildTypes.debug) {
+                    cppCompiler.args '/FS'
                     cppCompiler.args '/Zi'
                     cppCompiler.define 'DEBUG'
                     linker.args '/DEBUG'

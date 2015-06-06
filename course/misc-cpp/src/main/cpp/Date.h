@@ -23,7 +23,7 @@ namespace utils {
 
 		void setMonth(int month)
 		{
-			this->getMonth = std::max(1, std::min(12, month));
+			this->month_ = std::max(1, std::min(12, month));
 			setDay(this->day_);
 		}
 
